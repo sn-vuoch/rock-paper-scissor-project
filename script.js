@@ -9,4 +9,12 @@ function getComputerChoice() {
   }
 }
 
+function getHumanChoice() {
+  let userPrompt = String(
+    prompt("Enter rock, paper or scissors!"),
+  ).toLowerCase();
+  return userPrompt;
+}
+
+console.log(getHumanChoice());
 
