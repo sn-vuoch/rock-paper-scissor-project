@@ -1,6 +1,6 @@
 # rock-paper-scissor-project
 
-Pseudocode
+## Pseudocode
 
 getComputerChoice() function:
 
@@ -28,5 +28,5 @@ playGame() function:
 - Call playRound() 5 times to play 5 times.
 - Compare between human score and computer score to find winner.
 
-Acknowledge
+## Acknowledge
 I would like to fully thank you to The Odin Project.
