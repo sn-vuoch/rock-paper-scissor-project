@@ -16,5 +16,5 @@ function getHumanChoice() {
   return userPrompt;
 }
 
-console.log(getHumanChoice());
-
+let computerScore = 0;
+let humanScore = 0;
