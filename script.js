@@ -48,6 +48,7 @@ function playGame() {
     round.textContent = `${clickCount + 1}`;
     // Clear result after click to show a new result
     result.textContent = "";
+    finalResult.textContent = "";
 
     let humanChoice = e.target.textContent.toLowerCase();
     if (
@@ -68,31 +69,31 @@ function playGame() {
   function playRound(humanChoice, computerChoice) {
     switch (true) {
       case humanChoice === "paper" && computerChoice === "rock":
-        result.textContent = "You win! Paper beats Rock";
+        result.textContent = "You win! Paper beats Rock.";
         humanScore++;
         break;
       case humanChoice === "paper" && computerChoice === "scissors":
-        result.textContent = "You lose! Scissors beats Paper";
+        result.textContent = "You lose! Scissors beats Paper.";
         computerScore++;
         break;
       case humanChoice === "rock" && computerChoice === "paper":
-        result.textContent = "You lose! Paper beats Rock";
+        result.textContent = "You lose! Paper beats Rock.";
         computerScore++;
         break;
       case humanChoice === "rock" && computerChoice === "scissors":
-        result.textContent = "You win! Rock beats Scissors";
+        result.textContent = "You win! Rock beats Scissors.";
         humanScore++;
         break;
       case humanChoice === "scissors" && computerChoice === "paper":
-        result.textContent = "You win! Scissors beats Paper";
+        result.textContent = "You win! Scissors beats Paper.";
         humanScore++;
         break;
       case humanChoice === "scissors" && computerChoice === "rock":
-        result.textContent = "You lose! Rock beats Scissors";
+        result.textContent = "You lose! Rock beats Scissors.";
         computerScore++;
         break;
       default:
-        result.textContent = `You tie! You choose ${humanChoice} and Computer also choose ${computerChoice}`;
+        result.textContent = `You tie! You choose ${humanChoice} and Computer also choose ${computerChoice}.`;
     }
 
     // Update human and computer's score after check condition

@@ -8,13 +8,35 @@ body {
   font-family: "JetBrains Mono", monospace;
 }
 
+button {
+  font-family: "JetBrains Mono", monospace;
+  padding: 30px 70px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #3f72af;
+  border: none;
+  border-radius: 5px;
+}
+
 .container {
   width: 50%;
   margin: auto;
   margin-top: 50px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  background-color: #dbe2ef;
 }
 
 h3 {
   text-align: center;
   font-size: 30px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
